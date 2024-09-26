@@ -36,7 +36,7 @@ app.use(function(err, req, res, next) {
   // render the error page with a title
   res.status(err.status || 500);
   res.render('error', {
-    title: 'Error'  // Fix: add title for error page
+    title: 'Airline Error'  // Changed title for error page
   });
 });
 

@@ -1,46 +1,46 @@
 module.exports.homelist = function(req, res) {
   res.render('locations-list', {
-      title: 'Loc8r - find a place to work with wifi',
+      title: 'AirFinder - find an airline with premium services',
       pageHeader: {
-          title: 'Loc8r',
-          strapline: 'Find places to work with wifi near you!'
+          title: 'AirFinder',
+          strapline: 'Find airlines with premium services and amenities near you!'
       },
-      sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. " +
-          "Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+      sidebar: "Looking for airlines with premium services? AirFinder helps you locate airlines that offer the best in-flight experiences. " +
+          "Perhaps with gourmet meals, extra legroom, or priority boarding? Let AirFinder guide you to the perfect airline.",
       locations: [{
-          name: 'Starcups',
-          address: '125 High Street, Reading, RG6 1PS',
-          rating: 3,
-          facilities: ['Hot drinks', 'Food', 'Premium wifi'],
-          distance: '100m'
+          name: 'SkyFly',
+          address: 'Terminal 1, JFK Airport, New York, NY 11430',
+          rating: 5,
+          facilities: ['First Class', 'In-flight meals', 'WiFi'],
+          distance: '10km'
       }, {
-          name: 'Cafe Hero',
-          address: '125 High Street, Reading, RG6 1PS',
+          name: 'JetStream',
+          address: 'Terminal 4, Heathrow Airport, London, TW6 1EW',
           rating: 4,
-          facilities: ['Hot drinks', 'Food', 'Premium wifi'],
-          distance: '200m'
+          facilities: ['Business Class', 'In-flight entertainment', 'WiFi'],
+          distance: '12km'
       }, {
-          name: 'Burger Queen',
-          address: '125 High Street, Reading, RG6 1PS',
-          rating: 2,
-          facilities: ['Food', 'Premium wifi'],
-          distance: '250m'
+          name: 'CloudWings',
+          address: 'Terminal 3, LAX Airport, Los Angeles, CA 90045',
+          rating: 3,
+          facilities: ['Economy Class', 'Snacks', 'WiFi'],
+          distance: '15km'
       }]
   });
 };
 
 module.exports.locationInfo = function(req, res) {
-  res.render('locations-info1', { title: 'LocationInfo' });
+  res.render('locations-info1', { title: 'Airline Info' });
 };
 
 module.exports.locationInfo1 = function(req, res) {
-  res.render('locations-info2', { title: 'LocationInfo1' });
+  res.render('locations-info2', { title: 'Airline Info1' });
 };
 
 module.exports.locationInfo2 = function(req, res) {
-  res.render('locations-info3', { title: 'LocationInfo2' });
+  res.render('locations-info3', { title: 'Airline Info2' });
 };
 
 module.exports.addReview = function(req, res) {
-  res.render('locations-review-form', { title: 'ADD REVIEW' });
+  res.render('locations-review-form', { title: 'ADD AIRLINE REVIEW' });
 };

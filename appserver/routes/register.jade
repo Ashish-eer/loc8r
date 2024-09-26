@@ -2,12 +2,12 @@ extends layout
 
 block content
   h1(style="margin-top:200px")
-  
+
   .container
-    h1 Register now
+    h1 Register Now
     p.lead
       | Create your account. Do you have one?
-      a(href='/Signin') Signin Now.
+      a(href='/signin') Sign in Now.
 
     .form-group
       label(for='username') Username
@@ -19,7 +19,7 @@ block content
 
     .form-group
       label(for='confirm-password') Confirm Password
-      input.form-control(type='password', id='confirm-password', name='confirm-password', placeholder='Enter a password again')
+      input.form-control(type='password', id='confirm-password', name='confirm-password', placeholder='Enter the password again')
 
     button.btn.btn-primary(type='submit') Submit
     &nbsp;
